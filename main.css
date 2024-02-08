@@ -1,0 +1,93 @@
+
+/* conteudo do video */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+} 
+
+/* perfil das escritas*/
+
+.user-info h1 {
+  
+
+display: flex;
+justify-content: center;
+text-align: center; /* Alinha o texto ao centro horizontalmente */
+}
+
+/* perfil dos links */
+
+
+.user-avatar img {
+  width: 80px; /* Ajustando o tamanho do avatar */
+  height: 80px; /* Ajustando o tamanho do avatar */
+  border-radius: 50%;
+  align-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 50px;
+}
+.centered-container {
+  text-align: center;
+}
+
+/* botoes */
+
+.button-container {
+  text-align: center;
+}
+
+.rounded-button {
+  display: inline-block;
+  padding: 10% 20%;
+  margin: 0 10px;
+  width: 150px;
+  border-radius: 30px; /* Adicionando bordas arredondadas */
+  background-color: #AE80F6;
+  color: #900DE5;
+  font-size: 16px;
+  text-decoration: none; /* Removendo sublinhado padrão de links */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Adicionando transição para o efeito de movimento */
+}
+
+.rounded-button:hover {
+  transform: translateY(-5px); /* Movendo para cima quando o cursor está sobre o botão */
+}
+
+
+ /* tirando os marcadores das listas */
+
+.no-list-style {
+  list-style: none; /* Removendo os marcadores/botões de tópicos */
+}
+
+.no-list-style li {
+  margin-bottom: 10px; /* Adicionando espaçamento entre os itens da lista */
+}
+
